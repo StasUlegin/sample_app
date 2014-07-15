@@ -1,5 +1,5 @@
 SampleApp::Application.routes.draw do
-  get "users/new"
+  resources :users
   #get "static_pages/about"
   match '/about',   to: 'static_pages#about',   via: 'get'
   #get "static_pages/help"
